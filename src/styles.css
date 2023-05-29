@@ -1,0 +1,80 @@
+.tudo{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgb(248, 248, 248), #00f7f7);
+}
+
+.conteiner{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fffb00;
+    padding: 10vh;
+    margin: 10px 0;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 1px 4px 10px #000000a4;
+}
+.titulo{
+    font-size: 85px;
+    color: rgb(12, 0, 182);
+    animation: flip 2s;
+    text-shadow: 1px 4px 10px #000000a4;
+    
+}
+
+@keyframes flip {
+    from{
+        transform: rotateX(90deg);
+    }
+    to{
+        transform: rotateX(0deg);
+    }
+}
+
+.imput{
+    background-color: #ffffff;
+    padding: 50px;
+    margin: 20px 0;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 1px 4px 10px #000000a4;
+}
+
+.imput{
+    border: 0;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.botao{
+    border:0;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.botao:hover{
+    transform: scale(1.2);
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+@media (max-width:620px){
+    .titulo{
+    font-size: 60px;
+    }
+    .main {
+      font-size:10px;
+      
+    }
+}
